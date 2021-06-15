@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0DB4BE;
+}
+.logo{
+    color: white;
+    margin: 0px 10px 0px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-title{
+    font-weight: 300;
+    font-size: 45px;
+}
+.nav-toggle {
+    font-size: 1.5rem;
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.nav-toggle:hover {
+    transform: rotate(90deg);
+  }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 110px;
+    list-style: none;
+}
+li{
+    padding: 27px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+li:hover{
+    background-color: #36CCD5;
+}
+header{
+    margin: 57px 107px 0px;
+}
+img.banner-img{
+    width: 100%;
+}
+
+
+.banner .banner-slider-area .owl-nav button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 50px;
+    transform: translateY(-50%);
+    background: #fff;
+    height: 50px;
+    line-height: 68px;
+}
+
+.banner .banner-slider-area .owl-nav button img {
+    width: 24px;
+    background-color: gray;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.banner .banner-slider-area .owl-nav button.owl-next {
+    left: auto;
+    right: 0;
+}
+
+.banner .banner-slider-area .owl-dots button span {
+    width: 15px;
+    height: 15px;
+    background: gray;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+.banner .banner-slider-area .owl-dots button.active span {
+    background: #0DB4BE;
+}
+
+.banner .banner-slider-area .owl-dots {
+    position: absolute;
+    left: 50%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+}
+
+.all-section{
+    margin: 57px 107px 0px;
+}
+.title-area{
+    text-align: center;
+}
+.title{
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.title-area p{
+    color: #727272;
+    line-height: 30px;
+    font-weight: 300;
+}
+.hr{
+    width: 592px;
+    margin: 25px auto;
+}
+.multi-theme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sigle-theme{
+    width: 30%;
+    text-align: center;
+}
+.sigle-theme h3{
+    margin: 20px 0px;
+    font-weight: 300;
+    font-size: 25px;
+}
+.icon i{
+    margin: 20px 0px;
+    font-size: 45px;
+    color: #36CCD5;
+}
+.sigle-theme p{
+    font-weight: 300;
+    font-size: 16px;
+    color: gray;
+    margin-top: 25px;
+}
+.theme-btn{
+    margin: 45px 0px
+}
+.theme-btn a{
+    border: 1px solid gainsboro;
+    color: gray;
+    padding: 10px;
+}
+.Galleries{
+    margin: 57px 180px 0px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+.gallery img{
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.contact-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-width{
+    width: 30%;
+}
+.col-width .first{
+    text-align: center;  
+    color: #36CCD5;
+}
+.col-width h2{
+    margin: 60px 0px;
+    font-weight: 400;
+    font-size: 25px;
+}
+.col-width h6{
+    color: #727272;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px 0px;
+}
+.col-width h6 a{
+    color: #727272;
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 1px solid gainsboro;
+}
+.col-width i{
+    padding: 0px 8px;
+}
+
+
+
+footer{
+    background: #36CCD5;
+    padding:35px 23px;
+    color:#fff;
+    text-align: center;
+}
+footer span a{
+    color: #fff;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    height: 0rem;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.show-links {
+    height: 5rem;
+    margin: 0px auto;
+}
+@media screen and (max-width: 1100px) {
+    .gallery{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 950px) {
+    .sigle-theme{
+        width: 50%;
+    }
+    .col-width{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 890px) {
+    .nav-toggle {
+        display: none;
+    }
+    .nav{
+        height: auto;
+        display: flex;
+      }
+}
+@media screen and (max-width: 810px) {
+    .hr{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sigle-theme{
+        width: 100%;
+    }
+    .col-width{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hr{
+        width: 250px;
+    }
+    header{
+        margin: 35px 47px 0px;
+    }
+    .all-section{
+        margin: 50px 60px 0px;
+    }
+    .col-width{
+       text-align: center;
+       width: 100%;
+    }
+    .Galleries{
+        margin: 50px 60px 0px;
+    }
+    ul{
+        margin-right: 30px;
+    }
+    li{
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    ul{
+        margin-right: 30px;
+    }
+    li{
+        padding: 15px;
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header{
+        margin: 20px 30px 0px;
+    }
+    .all-section{
+        margin: 50px 28px 0px;
+    }
+    .Galleries{
+        margin: 50px 28px 0px;
+    }
+    .logo{
+        margin: 0px 10px 0px 40px;
+    }
+    ul{
+        margin-right: 30px;
+    }
+    li{
+        padding: 12px;
+    }
+    .title{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 410px) {
+    header{
+        margin: 10px 10px 0px;
+    }
+    .all-section{
+        margin: 50px 10px 0px;
+    }
+    .Galleries{
+        margin: 50px 10px 0px;
+    }
+    .logo{
+        margin: 0px 10px 0px 30px;
+    }
+    .logo-title{
+        font-weight: 300;
+        font-size: 35px;
+    }
+    ul{
+        margin-right: 30px;
+    }
+    li{
+        padding: 8px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .logo{
+        margin: 0px 10px 0px 20px;
+    }
+    .logo-title{
+        font-weight: 300;
+        font-size: 25px;
+    }
+    ul{
+        margin-right: 35px;
+    }
+    li{
+        padding: 5px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    
+}
+
